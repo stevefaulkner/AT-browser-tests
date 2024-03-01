@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>test file: search element</title>
+	</head>
+	<body>
+		<h1><code>search</code> element</h1>
+		<ul>
+			<li>Plain</li>
+			<li>With <code>&lt;h1></code></li>
+			<li>With <code>aria-label</code>
+			<li>With <code>&lt;h1></code> referenced by <code>aria-labelledby</code></li>
+		</ul>
+		<search>
+		Lorem ipsum...
+		</search>
+		<hr>
+
+		<search>
+		<h1>Once upon a time</h1>
+		Lorem ipsum...
+		</search>
+		<hr>
+
+		<search aria-label="Once upon a time">
+		Lorem ipsum...
+		</search>
+		<hr>
+
+		<search aria-labelledby="search-title">
+		<h1 id="search-title">Once upon a time</h1>
+		Lorem ipsum...
+		</search>
+
+		<h2>Code</h2>
+		<pre><code>&lt;search>
+Lorem ipsum...
+&lt;/search></code></pre>
+<hr>
+
+<pre><code>&lt;search>
+&lt;h1>Once upon a time&lt;/h1>
+Lorem ipsum...
+&lt;/search></code></pre>
+<hr>
+
+<pre><code>&lt;search aria-label="Once upon a time">
+Lorem ipsum...
+&lt;/search></code></pre>
+<hr>
+
+<pre><code>&lt;search aria-labelledby="search-title">
+&lt;h1 id="search-title">Once upon a time&lt;/h1>
+Lorem ipsum...
+&lt;/search></code></pre>
+
+		<h2>Reference</h2>
+		<p><a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-search-element">HTML5 search element</a></p>
+	</body>
+</html>
