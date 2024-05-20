@@ -55,12 +55,12 @@
 
 		<div class="test">
 			<h2 class="test-title" id="dialog-001">
-				Test dialog-001: <code>dialog</code> element
+				Test dialog-001: <code>dialog</code> element with <code>aria-haspopup="dialog"</code> on <code>button</code>
 			</h2>
 
 			<div class="test-case">
 <div id="div-01">
-    <button id="openDialogButton1">Open Dialog 1</button>
+    <button id="openDialogButton1" aria-haspopup="dialog">Open Dialog 1</button>
     <dialog id="testDialog1">
       <form method="dialog">
         <p>Dialog content goes here.</p>
@@ -79,7 +79,7 @@
 		<div class="test">
 			<h2 class="test-title" id="dialog-002">
 				Test dialog-002: <code>dialog</code> element
-				with <code>aria-label="ARIA label text"</code>
+				with <code>aria-label="Test Dialog 2"</code>
 			</h2>
 
 			<div class="test-case">
@@ -99,7 +99,7 @@
    <div class="test">
 			<h2 class="test-title" id="dialog-003">
 				Test dialog-003: <code>dialog</code> element
-				with <code>aria-label="ARIA label text" and <code>tabindex="-1"</code></code>
+				with <code>aria-label="Test Dialog 3" and <code>tabindex="-1"</code></code>
 			</h2>
 
 			<div class="test-case">
@@ -119,12 +119,12 @@
     <div class="test">
 			<h2 class="test-title" id="dialog-004">
 				Test dialog-004: <code>dialog</code> element
-				with <code>aria-label="ARIA label text"</code> and structured text content.
+				with <code>aria-label="Test Dialog 4"</code> and structured text content.
 			</h2>
 
 			<div class="test-case">
         <button id="openDialogButton4">Open Dialog 4</button>
-    <dialog id="testDialog4">
+    <dialog id="testDialog4" aria-label="Test Dialog 4">
       <form method="dialog">
         <h3>Dialog Heading</h3>
         <p>Some introductory text.</p>
