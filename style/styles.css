@@ -55,7 +55,7 @@ a:hover {
 }
 
 button:focus,
-a:focus {
+a:focus, *[tabindex]:focus {
 	box-shadow: none;
 	outline-offset: 2px;
 	outline: 3px solid rgba(42, 122, 130, .75);
@@ -391,3 +391,5 @@ video {
 	}
 
 }
+
+*[tabindex]{border:1px solid gray;width:10em;height:1.2em;background-color:yellow}
