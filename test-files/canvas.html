@@ -132,7 +132,26 @@
 </script>
 			</div>
 		</div>
+<div class="test">
+	<h2 class="test-title" id="cv-005">Test cv-005: Canvas element with <code>role=img</code> + <code>aria-label</code> with <code>tabindex="0"</code></h2>
 
+			<div class="test-case">
+<canvas id="myCanvas3" width="338" height="258" role="img" aria-label="Lady of Shalott" tabindex="0">
+	
+</canvas>
+
+<script>
+	var canv = document.getElementById('myCanvas3');
+	var cont = canv.getContext('2d');
+	var imageOb = new Image();
+
+	imageOb.onload = function() {
+		cont.drawImage(imageOb, 0, 0);
+	};
+	imageOb.src = '../images/shalott.jpg';
+</script>
+			</div>
+		</div>
 		<script src="../scripts/test-scripts.js"></script>
 		<script>
 			var test = [];
